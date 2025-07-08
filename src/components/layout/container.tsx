@@ -15,7 +15,9 @@ const Container = ({
   fullWidth,
   gap,
 }: ContainerProps) => {
-  const defaultDirection = direction ? direction : "flex-col lg:flex-row";
+  const defaultDirection = direction
+    ? `flex-${direction}`
+    : "flex-col lg:flex-row";
   const defaultFullWidth = fullWidth ? "" : "container px-4 lg:px-10 mx-auto";
   const defaultGap = gap ? gap : "md:gap-x-10 xl:gap-x-20 gap-4";
 
