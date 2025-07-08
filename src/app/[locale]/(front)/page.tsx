@@ -4,13 +4,14 @@ import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
 import Image from "next/image";
 import { Facebook, Instagram, Youtube, Twitter, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   return (
     <div>
       {/* 1. Hero Section */}
       <main className="relative h-screen bg-[url('/img/wine-bar2.png')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute top-0 right-0 z-10">
+        <div className="absolute top-5 right-10 z-10">
           <LanguageSwitcher />
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -69,7 +70,7 @@ export default function Page() {
               width={300}
               height={300}
             />
-            <P>
+            <P className="text-wine-bar-white">
               Naša vinska karta obsega rdeča, bela, oranžna vina in izjemne
               penine, ki jih lahko postrežemo tudi v skrbno oblikovanih
               degustacijskih menijih. Ob vrhunskem vinu vam postrežemo ročno
@@ -77,8 +78,8 @@ export default function Page() {
             </P>
           </div>
           <div className="flex flex-col">
-            <H2>Kraj vinskih doživetij</H2>
-            <P>
+            <H2 className="text-wine-bar-white">Kraj vinskih doživetij</H2>
+            <P className="text-wine-bar-white">
               Naša vinska karta obsega rdeča, bela, oranžna vina in izjemne
               penine, ki jih lahko postrežemo tudi v skrbno oblikovanih
               degustacijskih menijih. Ob vrhunskem vinu vam postrežemo ročno
@@ -108,7 +109,7 @@ export default function Page() {
         {/* if no direction is provided, Container will be flex-col */}
         <Container>
           <div className="flex flex-col">
-            <H2>V srcu Bleda </H2>
+            <H2 className="text-wine-bar-white">V srcu Bleda </H2>
 
             <P className="text-wine-bar-white">
               Kjer se zrcali podoba alpskega raja, domuje novi Bled Wine Bar –
@@ -132,14 +133,14 @@ export default function Page() {
               width={300}
               height={300}
             />
-            <P>
+            <P className="text-wine-bar-white">
               Slovenija je dežela 3 vinorodnih dežel in 9 vinorodnih okolišev,
               kjer uspevajo ene najbolj unikatnih sort grozdja na svetu. V našem
               baru boste lahko raziskovali zgodbe slovenskih vinarjev, okušali
               skrbno izbrane avtohtone sorte in uživali v prepletanju
               tradicionalnih in sodobnih okusov.
             </P>
-            <P>
+            <P className="text-wine-bar-white">
               Naš cilj je, da vsak gost doživi pravo vinsko popotovanje – od
               svežih belih, polnih rdečih do izjemnih oranžnih in naravnih vin.
             </P>
@@ -150,14 +151,14 @@ export default function Page() {
       {/* 6. Section */}
       <Section className="bg-wine-bar-red">
         {/* if no direction is provided, Container will be flex-col */}
-        <Container className="bg-[#641320]">
+        <Container className="bg-[#641320] text-wine-bar-white">
           <div className="flex flex-col">
             <H2>Rrzervacije</H2>
             <P>
               Za rezervacije degustacij, dogodkov ali zasebnih večerov izpolnite
               kontaktni obrazec.
             </P>
-            <button>REZERVIRAJTE MIZO</button>
+            <Button variant="bledWhite">REZERVIRAJTE MIZO</Button>
             <P>Ali pa nas kontaktirajte na: rezervacije@bledwinebar.com</P>
           </div>
           <Image
@@ -206,7 +207,7 @@ export default function Page() {
           </div>
         </Container>
         <div className="flex justify-center">
-          <button>GALERIJA</button>
+          <Button variant="bledRed">GALERIJA</Button>
         </div>
       </Section>
 

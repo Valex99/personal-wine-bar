@@ -8,13 +8,16 @@
   --wine-bar-white: #ffffff;
 }
 
-@theme inline {
+@theme {
   --font-satoshi: var(--font-satoshi);
-  --wine-bar-red: var(--wine-bar-red);
-  --wine-bar-black: var(--wine-bar-black);
-  --wine-bar-white: var(--wine-bar-white);
+
+  --color-wine-bar-red: var(--wine-bar-red);
+  --color-wine-bar-black: var(--wine-bar-black);
+  --color-wine-bar-white: var(--wine-bar-white);
 }
 
-* {
-  border: 1px solid red;
-}
+/* body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
