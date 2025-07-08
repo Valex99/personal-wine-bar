@@ -1,4 +1,4 @@
-import { fallbackLng, locales } from "@/i18n/settings";
+import { fallbackLng, locales } from "./i18n/settings";
 import { type Session, decrypt, encrypt } from "@/lib/session";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";

@@ -3,22 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --wine-bar-red: #641320;
+  --wine-bar-black: #010101;
+  --wine-bar-white: #ffffff;
 }
 
 @theme inline {
   --font-satoshi: var(--font-satoshi);
+  --wine-bar-red: var(--wine-bar-red);
+  --wine-bar-black: var(--wine-bar-black);
+  --wine-bar-white: var(--wine-bar-white);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --wine-bar-red: #641320;
-    --wine-bar-black: #010101;
-    --wine-bar-white: #ffffff;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  border: 1px solid red;
 }
