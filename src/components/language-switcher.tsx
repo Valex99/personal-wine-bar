@@ -31,7 +31,7 @@ export default function LanguageSwitcher({ className, black }: Props) {
   return (
     <div
       className={cn(
-        "flex-inline items-center flex justify-center font-satoshi  text-[12px] lg:text-[16px] cursor-pointer border-2 border-white rounded-full p-2 px-5 bg-wine-bar-white",
+        "flex-inline items-center flex justify-center font-satoshi text-[12px] lg:text-[16px] font-bold cursor-pointer border-2 border-white rounded-full p-0.5 px-0.5 bg-wine-bar-white",
         className
       )}
     >
@@ -39,30 +39,30 @@ export default function LanguageSwitcher({ className, black }: Props) {
         className={`${
           locale === "si"
             ? black
-              ? "text-wine-bar-red"
-              : "text-wine-bar-red"
+              ? "text-wine-bar-white bg-wine-bar-red"
+              : "text-wine-bar-white bg-wine-bar-red py-0.5 px-2 rounded-full"
             : black
-            ? "text-wine-bar-red/50"
-            : "text-wine-bar-red/50"
+            ? "text-wine-bar-red bg-wine-bar-white"
+            : "text-wine-bar-red bg-wine-bar-white py-0.5 px-2 rounded-full"
         }`}
         onClick={() => handleLocaleChange("si")}
       >
         SLO
       </div>
-      <Dot
+      {/* <Dot
         className={`size-6 ${
           black ? "text-wine-bar-red" : "text-wine-bar-red"
         } cursor-default`}
-      />
+      /> */}
       <div
         className={`${
           locale === "en"
             ? black
-              ? "text-wine-bar-red"
-              : "text-wine-bar-red"
+              ? "text-wine-bar-white bg-wine-bar-red"
+              : "text-wine-bar-white bg-wine-bar-red py-0.5 px-2 rounded-full"
             : black
-            ? "text-wine-bar-red"
-            : "text-wine-bar-red"
+            ? "text-wine-bar-red bg-wine-bar-white"
+            : "text-wine-bar-red bg-wine-bar-white py-0.5 px-2 rounded-full"
         }`}
         onClick={() => handleLocaleChange("en")}
       >
