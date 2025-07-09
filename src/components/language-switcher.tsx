@@ -31,7 +31,7 @@ export default function LanguageSwitcher({ className, black }: Props) {
   return (
     <div
       className={cn(
-        "flex-inline items-center flex justify-center font-satoshi  text-[12px] lg:text-[16px] cursor-pointer",
+        "flex-inline items-center flex justify-center font-satoshi  text-[12px] lg:text-[16px] cursor-pointer border-2 border-white rounded-full p-2 px-5 bg-wine-bar-white",
         className
       )}
     >
@@ -39,11 +39,11 @@ export default function LanguageSwitcher({ className, black }: Props) {
         className={`${
           locale === "si"
             ? black
-              ? "text-black"
-              : "text-white"
+              ? "text-wine-bar-red"
+              : "text-wine-bar-red"
             : black
-            ? "text-black/50"
-            : "text-white/50"
+            ? "text-wine-bar-red/50"
+            : "text-wine-bar-red/50"
         }`}
         onClick={() => handleLocaleChange("si")}
       >
@@ -51,18 +51,18 @@ export default function LanguageSwitcher({ className, black }: Props) {
       </div>
       <Dot
         className={`size-6 ${
-          black ? "text-black" : "text-white"
+          black ? "text-wine-bar-red" : "text-wine-bar-red"
         } cursor-default`}
       />
       <div
         className={`${
           locale === "en"
             ? black
-              ? "text-black"
-              : "text-white"
+              ? "text-wine-bar-red"
+              : "text-wine-bar-red"
             : black
-            ? "text-black/50"
-            : "text-white/50"
+            ? "text-wine-bar-red"
+            : "text-wine-bar-red"
         }`}
         onClick={() => handleLocaleChange("en")}
       >
