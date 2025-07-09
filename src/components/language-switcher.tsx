@@ -2,7 +2,6 @@
 
 import { type LocaleTypes, locales } from "@/i18n/settings";
 import { cn } from "@/lib/utils";
-import { Dot } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import React from "react";
 
@@ -31,7 +30,7 @@ export default function LanguageSwitcher({ className, black }: Props) {
   return (
     <div
       className={cn(
-        "flex-inline items-center flex justify-center font-satoshi text-[12px] lg:text-[16px] font-bold cursor-pointer border-2 border-white rounded-full p-0.5 px-0.5 bg-wine-bar-white",
+        "flex-inline items-center flex justify-center font-satoshi gap-2 text-[12px] lg:text-[16px] font-bold cursor-pointer border-2 border-white rounded-full p-0.5 px-0.5 bg-wine-bar-white",
         className
       )}
     >
